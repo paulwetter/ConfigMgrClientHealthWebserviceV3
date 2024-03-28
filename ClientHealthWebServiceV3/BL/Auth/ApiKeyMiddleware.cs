@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 
-namespace ClientHealthWebServiceV2.BL.Auth
+namespace ClientHealthWebserviceV3.BL.Auth
 {
     //public class ApiKeyMiddleware
     //{

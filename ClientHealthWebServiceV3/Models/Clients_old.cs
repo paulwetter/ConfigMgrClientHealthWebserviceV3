@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Web;
 
-namespace ClientHealthWebServiceV2.Models
+namespace ClientHealthWebserviceV3.Models
 {
     [Table("Clients_old")]
     public class Client_Old

@@ -1,6 +1,6 @@
-using ClientHealthWebServiceV2.BL.Auth;
-using ClientHealthWebServiceV2.BL.ClientActions;
-using ClientHealthWebServiceV2.Models;
+using ClientHealthWebserviceV3.BL.Auth;
+using ClientHealthWebserviceV3.BL.ClientActions;
+using ClientHealthWebserviceV3.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;

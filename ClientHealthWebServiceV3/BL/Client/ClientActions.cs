@@ -1,11 +1,11 @@
-﻿using ClientHealthWebServiceV2.Models;
-using ClientHealthWebServiceV2.Models.Configuration;
+﻿using ClientHealthWebserviceV3.Models;
+using ClientHealthWebserviceV3.Models.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Xml.Linq;
 
-namespace ClientHealthWebServiceV2.BL.ClientActions
+namespace ClientHealthWebserviceV3.BL.ClientActions
 {
     public class ClientActions : IClientActions
     {

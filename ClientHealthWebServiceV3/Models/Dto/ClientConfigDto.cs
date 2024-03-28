@@ -1,4 +1,4 @@
-﻿namespace ClientHealthWebServiceV2.Models.Configuration
+﻿namespace ClientHealthWebserviceV3.Models.Configuration
 {
     using System;
     using System.Collections.Generic;

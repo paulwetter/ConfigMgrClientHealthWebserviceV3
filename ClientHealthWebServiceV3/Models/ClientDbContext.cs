@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ClientHealthWebServiceV2.Models
+namespace ClientHealthWebserviceV3.Models
 {
     public class ClientDBContext : DbContext
     {

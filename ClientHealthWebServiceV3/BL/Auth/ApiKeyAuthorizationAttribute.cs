@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ClientHealthWebServiceV2.BL.Auth
+namespace ClientHealthWebserviceV3.BL.Auth
 {
     public class ApiKeyAuthorizationAttribute : TypeFilterAttribute
     {

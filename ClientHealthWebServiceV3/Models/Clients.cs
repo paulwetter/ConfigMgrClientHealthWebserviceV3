@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClientHealthWebServiceV2.Models
+namespace ClientHealthWebserviceV3.Models
 {
     [Table("Clients")]
     public class Client

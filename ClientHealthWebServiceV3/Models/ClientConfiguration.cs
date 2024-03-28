@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClientHealthWebServiceV2.Models
+namespace ClientHealthWebserviceV3.Models
 {
     public class ClientConfiguration
     {

@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ClientHealthWebServiceV2.Models;
+using ClientHealthWebserviceV3.Models;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using ClientHealthWebServiceV2.BL.Auth;
-using ClientHealthWebServiceV2.BL.ClientActions;
-using ClientHealthWebServiceV2.Models.Configuration;
+using ClientHealthWebserviceV3.BL.Auth;
+using ClientHealthWebserviceV3.BL.ClientActions;
+using ClientHealthWebserviceV3.Models.Configuration;
 
-namespace ClientHealthWebServiceV2.Controllers
+namespace ClientHealthWebserviceV3.Controllers
 {
     public class ClientsController : Controller
     {

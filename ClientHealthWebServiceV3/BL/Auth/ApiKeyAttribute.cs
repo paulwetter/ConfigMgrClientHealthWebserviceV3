@@ -1,10 +1,10 @@
-﻿using ClientHealthWebServiceV2.Controllers;
+﻿using ClientHealthWebserviceV3.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Serilog;
 using ILogger = Microsoft.Extensions.Logging.ILogger;
 
-namespace ClientHealthWebServiceV2.BL.Auth
+namespace ClientHealthWebserviceV3.BL.Auth
 {
     [AttributeUsage(validOn: AttributeTargets.Method)]
     public class ApiKeyAttribute : Attribute, IAsyncActionFilter
