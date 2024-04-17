@@ -1,6 +1,7 @@
 using ClientHealthWebserviceV3.BL.Auth;
 using ClientHealthWebserviceV3.BL.ClientActions;
 using ClientHealthWebserviceV3.Models;
+using ClientHealthWebServiceV3.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -25,11 +26,12 @@ if (useSwagger)
     {
         options.SwaggerDoc("v1", new OpenApiInfo
         {
-            Version = "v1",
+            Version = "v3",
             Title = "Client Health API",
             Description = ""
         }
         );
+        options.OperationFilter<SwaggerDocs>();
     });
 }
 
@@ -43,7 +45,7 @@ builder.Services.AddDbContext<ClientDBContext>(options => options.UseSqlServer(C
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment() && useSwagger)
+if (useSwagger)
 {
     app.UseSwagger();
     app.UseSwaggerUI();

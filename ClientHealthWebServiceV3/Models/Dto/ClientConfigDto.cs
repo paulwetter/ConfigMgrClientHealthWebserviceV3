@@ -7,7 +7,7 @@
     public class ClientConfigDto
     {
         [JsonProperty("WebService")]
-        public WebServiceJson WebService { get; set; } = new WebServiceJson();
+        public List<WebServiceJson> WebService { get; set; } = new List<WebServiceJson>();
 
         [JsonProperty("LocalFiles")]
         public LocalFilesJson LocalFiles { get; set; } = new LocalFilesJson();
@@ -57,9 +57,6 @@
 
         [JsonProperty("Value")]
         public string? Value { get; set; }
-
-        [JsonProperty("Enable")]
-        public string? Enable { get; set; }
     }
 
     public class LogJson
@@ -67,23 +64,11 @@
         [JsonProperty("Name")]
         public string Name { get; set; } = string.Empty;
 
-        [JsonProperty("Share")]
-        public string? Share { get; set; }
-
-        [JsonProperty("Level")]
-        public string? Level { get; set; }
-
-        [JsonProperty("MaxLogHistory")]
-        public string? MaxLogHistory { get; set; }
-
-        [JsonProperty("LocalLogFile")]
-        public string? LocalLogFile { get; set; }
+        [JsonProperty("Value")]
+        public string? Value { get; set; }
 
         [JsonProperty("Enable")]
         public string? Enable { get; set; }
-
-        [JsonProperty("Value")]
-        public string? Value { get; set; }
 
         [JsonProperty("Comment")]
         public string? Comment { get; set; } = "Valid time formats: ClientLocal / UTC";
@@ -102,12 +87,6 @@
 
         [JsonProperty("Value")]
         public string? Value { get; set; }
-
-        [JsonProperty("Days")]
-        public string? Days { get; set; }
-
-        [JsonProperty("Share")]
-        public string? Share { get; set; }
     }
 
     public class ServiceJson

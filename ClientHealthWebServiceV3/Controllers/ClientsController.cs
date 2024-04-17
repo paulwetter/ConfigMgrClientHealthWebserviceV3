@@ -45,15 +45,21 @@ namespace ClientHealthWebserviceV3.Controllers
         [ApiKeyAuthorization("ClientApiKeys")]
         [HttpPut]
         [Route("api/[controller]/Client")]
-        public ActionResult<Client> SetClient([FromBody] Client client)
+        public ActionResult<Client> SetClient([FromBody] ClientDto clientDto)
         {
+            if (clientDto == null)
+            {
+                _logger.LogWarning("Failed to parse received client data.");
+                return BadRequest("Failed to parse received client data.");
+            }
             try
             {
+                var client = clientDto.ConvertClientDtoToClient();
                 return _clientActions.SetClient(client);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Failed to set client data from client: [{client.Hostname}] {ex.Message}");
+                _logger.LogError($"Failed to set client data from client: [{clientDto.Hostname}] {ex.Message}");
                 return BadRequest(ex);
             }
         }
