@@ -1,7 +1,5 @@
-﻿using ClientHealthWebserviceV3.Controllers;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Serilog;
 using ILogger = Microsoft.Extensions.Logging.ILogger;
 
 namespace ClientHealthWebserviceV3.BL.Auth

@@ -1,11 +1,9 @@
-using ClientHealthWebserviceV3.BL.Auth;
 using ClientHealthWebserviceV3.BL.ClientActions;
 using ClientHealthWebserviceV3.Models;
 using ClientHealthWebServiceV3.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +41,13 @@ string ConnectionString = builder.Configuration.GetConnectionString("DefaultConn
 builder.Services.AddDbContext<ClientDBContext>(options => options.UseSqlServer(ConnectionString));
 
 var app = builder.Build();
+
+// Apply migrations at startup
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ClientDBContext>();
+    dbContext.Database.Migrate(); // Applies any pending migrations
+}
 
 // Configure the HTTP request pipeline.
 if (useSwagger)

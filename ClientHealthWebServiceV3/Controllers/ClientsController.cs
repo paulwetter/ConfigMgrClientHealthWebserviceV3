@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ClientHealthWebserviceV3.Models;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using ClientHealthWebserviceV3.BL.Auth;
 using ClientHealthWebserviceV3.BL.ClientActions;

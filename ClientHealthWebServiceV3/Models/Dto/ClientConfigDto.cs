@@ -1,8 +1,7 @@
-﻿namespace ClientHealthWebserviceV3.Models.Configuration
+﻿using Newtonsoft.Json;
+
+namespace ClientHealthWebserviceV3.Models.Configuration
 {
-    using System;
-    using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     public class ClientConfigDto
     {

@@ -1,9 +1,7 @@
 ﻿using ClientHealthWebserviceV3.Models;
 using ClientHealthWebserviceV3.Models.Configuration;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System.Xml.Linq;
 
 namespace ClientHealthWebserviceV3.BL.ClientActions
 {
